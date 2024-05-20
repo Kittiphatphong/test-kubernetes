@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: my-demo-app
-          image: kittiphatphong/test_kubernetes:latest
+          image: kittiphatphong/test_kubernetes:v7
           ports:
             - containerPort: 9000
