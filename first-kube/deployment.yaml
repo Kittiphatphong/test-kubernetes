@@ -17,3 +17,7 @@ spec:
           image: kittiphatphong/auth_start:v1
           ports:
             - containerPort: 9000
+      imagePullSecrets:
+        - name: regcred
+
+
