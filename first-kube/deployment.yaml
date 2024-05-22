@@ -14,10 +14,6 @@ spec:
     spec:
       containers:
         - name: auth-app
-          image: kittiphatphong/auth_start:v1
+          image: kittiphatphong/learnkube:latest
           ports:
             - containerPort: 9000
-      imagePullSecrets:
-        - name: regcred
-
-
