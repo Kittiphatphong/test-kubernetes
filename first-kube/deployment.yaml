@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth-app
+  name: my-demo-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
-      app: auth-app
+      app: my-demo-app
   template:
     metadata:
       labels:
-        app: auth-app
+        app: my-demo-app
     spec:
       containers:
-        - name: auth-app
+        - name: my-demo-app
           image: kittiphatphong/learnkube:latest
           ports:
             - containerPort: 9000
